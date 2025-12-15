@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE YEOMIN - 스페이스 여민</title>
+    <meta name="description" content="공간에 새로운 가능성을 불어넣는 스페이스 여민의 포트폴리오입니다.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Italiana&family=Noto+Sans+KR:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hero.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo_main.png" alt="SPACE YEOMIN Logo" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="gnb">
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slider -->
+        <section id="hero-slider">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 class="hero-slogan">We will join you in<br>styling your space.</h2>
+                <p class="hero-sub-slogan">스페이스 여민이 여러분의 공간 스타일링에 함께하겠습니다.</p>
+            </div>
+
+            <div class="slide active">
+                <div class="slide-bg">
+                    <div class="slide-half" style="background-image: url('images/slide1_1.jpg');"></div>
+                    <div class="slide-half" style="background-image: url('images/slide1_2.jpg');"></div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg">
+                    <div class="slide-half" style="background-image: url('images/slide2_1.jpg');"></div>
+                    <div class="slide-half" style="background-image: url('images/slide2_2.jpg');"></div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-bg">
+                    <div class="slide-half" style="background-image: url('images/slide3_1.jpg');"></div>
+                    <div class="slide-half" style="background-image: url('images/slide3_2.jpg');"></div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg">
+                    <div class="slide-half" style="background-image: url('images/slide4_new_1.jpg');"></div>
+                    <div class="slide-half" style="background-image: url('images/slide4_new_2.jpg');"></div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Section 1: About Us (Intro Only) -->
+        <section id="about" class="fade-section">
+            <div class="container about-container">
+                <h2 class="eng-title">About us</h2>
+
+                <!-- Part A: Intro -->
+                <div class="about-part-a">
+                    <div class="about-left">
+                        <h3 class="kor-title">공간 스타일러,<br>스페이스 여민과 함께하세요.</h3>
+                        <p class="about-desc">
+                            당신의 공간에 새로운 가능성을 불어넣습니다. <br>'스페이스 여민'은​ 단순한 인테리어를 넘어, 고객의 삶을 깊이 이해하고​ 최적의 맞춤형 솔루션을 제공하는
+                            스타일링 브랜드입니다.<br>
+                            전문적인 손길로 완성되는 감각적인 디자인, 당신이 꿈꾸던​ 이상적인 공간에서 더 나은 일상을 경험해 보세요.
+                        </p>
+                        <a href="portfolio.html" class="about-btn">프로젝트 보기</a>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-slider">
+                            <div class="about-slide active"
+                                style="background-image: url('images/about_slide_new_1.jpg');">
+                            </div>
+                            <div class="about-slide" style="background-image: url('images/about_slide_new_2.jpg');">
+                            </div>
+                            <div class="about-slide" style="background-image: url('images/about_slide_new_3.jpg');">
+                            </div>
+                            <div class="about-slide" style="background-image: url('images/about_slide_new_4.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use 1px Divider -->
+        <div class="main-divider"></div>
+
+        <!-- Section 3: Portfolio (White) -->
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="eng-title">Portfolio</h2>
+                <h3 class="kor-title section-subtitle-main">스페이스 여민이 작업한 <br class="mobile-br">작업 공간을 소개합니다.</h3>
+
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">전체 보기</button>
+                    <button class="filter-btn" data-filter="yeominjae_suwon">여민재 수원</button>
+                    <button class="filter-btn" data-filter="seoul_cheongpa">청파동 단기임대</button>
+                    <button class="filter-btn" data-filter="arumdeuri">아름드리 강릉</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Javascript will load items here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="images/logo_footer.png" alt="SPACE YEOMIN">
+                    </div>
+                    <nav class="footer-menu">
+                        <a href="about.html">About us</a>
+                        <a href="process.html">Process</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact us</a>
+                    </nav>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-info">
+                        <p>spaceyeomin@naver.com</p>
+                        <p>2F, 30, Jowon-ro, Jangan-gu, Suwon-si, Gyeonggi-do, Republic of Korea<br>Biz License
+                            769-60-00802</p>
+                    </div>
+                    <p class="footer-copyright">&copy; 2025 SPACE YEOMIN. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio-data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
