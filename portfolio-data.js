@@ -3,83 +3,128 @@
 // 1. Upload the image to the corresponding folder in 'images/portfolio/'.
 // 2. Add a new object to the 'portfolioData' array below.
 
-const portfolioData = [
-    // Yeominjae Suwon
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "yeomin_suwon_1.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7580.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7581.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7589.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7594.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7667.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7668.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7669.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7675.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7686.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7691.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7692.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7699.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7710.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7711.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7717.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7721.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7724.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7727.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7728.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7729.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7735.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7747.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7750.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7751.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7752.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7753.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7754.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7755.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7756.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_7757.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_8208.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_8365.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_8722.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_8724.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_8733.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_8852.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_8864.jpg" },
-    { category: "yeominjae_suwon", title: "여민재 수원", filename: "IMG_8869.jpg" },
-
-    // Seoul Station Cheongpa-dong
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7608.jpg" },
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7609.jpg" },
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7610.jpg" },
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7611.jpg" },
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7612.jpg" },
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7615.jpg" },
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7617.jpg" },
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7618.jpg" },
-    { category: "seoul_cheongpa", title: "청파동", filename: "IMG_7624.jpg" },
-
-    // Arumdeuri House
-    { category: "arumdeuri", title: "아름드리 House 02", filename: "arumdeuri_02.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 03", filename: "arumdeuri_03.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 06", filename: "arumdeuri_06.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 07", filename: "arumdeuri_07.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 11", filename: "arumdeuri_11.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 12", filename: "arumdeuri_12.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 13", filename: "arumdeuri_13.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 14", filename: "arumdeuri_14.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 17", filename: "arumdeuri_17.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 18", filename: "arumdeuri_18.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 19", filename: "arumdeuri_19.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 21", filename: "arumdeuri_21.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 22", filename: "arumdeuri_22.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 23", filename: "arumdeuri_23.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 24", filename: "arumdeuri_24.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 26", filename: "arumdeuri_26.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 27", filename: "arumdeuri_27.jpeg" },
-    { category: "arumdeuri", title: "아름드리 House 28", filename: "arumdeuri_28.jpeg" }
+const portfolioCategories = [
+    {
+        id: "stay",
+        name: "숙박 공간",
+        subcategories: [
+            { id: "gangneung_arumdeuri", name: "강릉 아름드리" },
+            { id: "suwon_yeominjae", name: "수원 여민재" }
+        ]
+    },
+    {
+        id: "rental",
+        name: "임대 공간",
+        subcategories: [
+            { id: "yongsan_rental", name: "용산 단기임대" }
+        ]
+    },
+    {
+        id: "living",
+        name: "주거 공간",
+        subcategories: [
+            { id: "anyang_apt", name: "안양 59㎡ APT" },
+            { id: "nowon_apt", name: "노원 59㎡ APT" }
+        ]
+    }
 ];
 
-// Map internal category IDs to display names (Korean)
-const categoryNames = {
-    "yeominjae_suwon": "여민재 수원",
-    "seoul_cheongpa": "청파동 단기임대",
-    "arumdeuri": "아름드리 강릉"
-};
+const portfolioData = [
+    // 수원 여민재
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "1.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "2.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "3.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "4.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "5.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "6.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "7.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "8.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "9.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "10.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "11.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "12.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "13.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "14.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "15.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "16.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "17.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "18.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "19.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "20.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "21.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "22.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "23.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "24.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "25.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "26.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "27.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "28.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "29.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "30.jpg" },
+    { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "31.png" },
+
+    // 용산 단기임대
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "1.jpg" },
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "2.jpg" },
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "3.jpg" },
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "4.jpg" },
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "5.jpg" },
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "6.jpg" },
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "7.jpg" },
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "8.jpg" },
+    { projectId: "yongsan_rental", title: "용산 단기임대", filename: "9.jpg" },
+
+    // 강릉 아름드리
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "1.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "2.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "3.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "4.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "5.jpg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "6.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "7.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "8.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "9.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "10.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "11.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "12.jpeg" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "13.JPG" },
+    { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "14.png" },
+
+    // 안양 59㎡ APT
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "1.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "2.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "3.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "4.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "5.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "6.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "7.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "8.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "9.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "10.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "11.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "12.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "13.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "14.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "15.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "16.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "17.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "18.jpg" },
+    { projectId: "anyang_apt", title: "안양 59㎡ APT", filename: "19.jpg" },
+
+    // 노원 59㎡ APT
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "1.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "2.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "3.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "4.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "5.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "6.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "7.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "8.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "9.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "10.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "11.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "12.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "13.jpg" },
+    { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "14.jpg" },
+
+];

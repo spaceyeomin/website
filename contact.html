@@ -46,35 +46,54 @@
 
     <main>
         <!-- Top Banner -->
-        <div class="sub-banner" style="background-image: url('images/process_banner.jpg');"></div>
+        <div class="sub-banner" style="background-image: url('images/sub_banner_new.png');"></div>
 
         <!-- Section 4: Contact us (Light Gray) -->
         <section id="contact" class="fade-section">
             <div class="container" style="margin-top: 50px;">
                 <h2 class="eng-title">Contact us</h2>
-                <p class="contact-intro">궁금하신 점이나 문의사항이 있으신가요?<br>아래 양식을 작성해서 남겨주시면, 빠른시간내 답변 드리겠습니다.</p>
+                <p class="contact-intro">궁금하신 점이나 문의사항이 있으신가요?<br>아래 양식을 작성해서 남겨주시면, <br class="mobile-br">빠른 시간 내 답변
+                    드리겠습니다.</p>
 
                 <div class="form-wrapper">
-                    <form class="contact-form" action="mailto:mknoh37@naver.com" method="post" enctype="text/plain">
+                    <form class="contact-form" action="https://formspree.io/f/xlgrnkzo" method="POST"
+                        enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="name">이름</label>
-                            <input type="text" id="name" name="name" required placeholder="본인의 성함을 입력해주세요.">
+                            <input type="text" id="name" name="name" placeholder="성함을 입력해 주세요" required>
                         </div>
+
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email" placeholder="답변 받을 이메일 주소를 입력해 주세요" required>
+                        </div>
+
                         <div class="form-group">
                             <label for="phone">연락처</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="연락 받으실 번호를 입력해주세요.">
+                            <input type="text" id="phone" name="phone" placeholder="연락처를 입력해 주세요">
                         </div>
+
                         <div class="form-group">
                             <label for="message">상세 내용</label>
-                            <textarea id="message" name="message" rows="5" required
-                                placeholder="문의하실 내용을 자유롭게 적어주세요."></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="문의하실 내용을 적어 주세요"
+                                required></textarea>
                         </div>
+
                         <div class="form-group">
-                            <label for="file">첨부파일</label>
-                            <input type="file" id="file" name="attachment">
+                            <label for="attachment">첨부파일</label>
+                            <input type="file" id="attachment" name="attachment">
                         </div>
+
                         <button type="submit" class="submit-btn">이메일 전송</button>
                     </form>
+                </div>
+
+                <!-- KakaoTalk Plus Friend Section -->
+                <div class="kakao-section">
+                    <h3>오픈 채팅으로도 <br class="mobile-br">상담을 받을 수 있어요!</h3>
+                    <img src="images/kakao_guide.png" alt="Kakao Guide" class="kakao-guide-img">
+                    <p>오픈 채팅 검색에서 '스페이스 여민'을 <br class="mobile-br">검색해 주세요.</p>
+                    <a href="https://open.kakao.com/o/srNh5g7h" class="kakao-btn" target="_blank">오픈 채팅 하러 가기</a>
                 </div>
             </div>
         </section>
@@ -96,7 +115,7 @@
                 </div>
                 <div class="footer-bottom">
                     <div class="footer-info">
-                        <p>spaceyeomin@naver.com</p>
+                        <p>space_yeomin@naver.com</p>
                         <p>2F, 30, Jowon-ro, Jangan-gu, Suwon-si, Gyeonggi-do, Republic of Korea<br>Biz License
                             769-60-00802</p>
                     </div>

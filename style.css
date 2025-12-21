@@ -127,7 +127,7 @@ img {
     /* Requirement: White text */
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: color 0.3s;
     opacity: 0.8;
 }
@@ -135,7 +135,7 @@ img {
 .gnb a:hover,
 .gnb a.active {
     opacity: 1;
-    color: #FF2D00;
+    color: #ff4800;
     /* Accent Color */
 }
 
@@ -245,7 +245,7 @@ section {
     color: #ffffff;
     /* Requirement: #ffffff */
     transition: all 0.3s;
-    border-radius: 50px;
+    border-radius: 0px;
     /* Requirement: 50px rule */
 }
 
@@ -369,8 +369,52 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
+}
+
+.filter-sub-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.filter-sub-tabs .filter-btn {
+    border: none;
+    position: relative;
+    padding: 0 25px;
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.filter-sub-tabs .filter-btn::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background-color: #ddd;
+}
+
+.filter-sub-tabs .filter-btn:last-child::after {
+    display: none;
+}
+
+.filter-sub-tabs .filter-btn:hover {
+    border-bottom: none;
+    color: #FF4800;
+}
+
+.filter-sub-tabs .filter-btn.active {
+    border-bottom: none;
+    color: #ff4800;
+    font-weight: 500;
 }
 
 .filter-btn {
@@ -395,26 +439,27 @@ section {
 
 /* Portfolio Grid - Masonry Layout (Fluid Height) */
 .portfolio-grid {
-    display: block;
-    column-count: 3;
-    column-gap: 20px;
+    display: flex;
+    gap: 20px;
     width: 100%;
+    align-items: flex-start;
+}
+
+.portfolio-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .portfolio-item {
     width: 100%;
     height: auto;
-    /* Fluid height */
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px;
-    /* Bottom gap for masonry */
     padding: 0;
     cursor: pointer;
-    break-inside: avoid;
-    /* Prevent split across columns */
-    display: inline-block;
-    /* Fix for some browsers */
+    display: block;
 }
 
 .portfolio-item img {
@@ -499,7 +544,7 @@ section {
 }
 
 .lightbox-close:hover {
-    color: #FF2D00;
+    color: #ff4800;
 }
 
 /* Contact Us */
@@ -515,6 +560,53 @@ section {
     background-color: #fff;
     padding: 3rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* KakaoTalk Plus Friend Section */
+.kakao-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.kakao-section h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.kakao-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.kakao-guide-img {
+    max-width: 95%;
+    margin: 20px auto;
+    display: block;
+}
+
+.kakao-btn {
+    display: block;
+    width: 100%;
+    background-color: #FEE500;
+    /* Kakao Yellow */
+    color: #191919;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.kakao-btn:hover {
+    opacity: 0.9;
+    color: #191919;
 }
 
 .contact-form {
@@ -541,7 +633,7 @@ section {
     background-color: #f9f9f9;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .form-group input:focus,
@@ -708,6 +800,10 @@ footer p {
         margin: 0 auto;
     }
 
+    .about-desc {
+        font-size: 15px;
+    }
+
     /* Process Mobile (Vertical) */
     .process-steps {
         flex-direction: column;
@@ -721,19 +817,23 @@ footer p {
     }
 
     /* Portfolio Mobile (2 columns with gap) */
+    /* Portfolio Mobile - JS handles columns, just adjust gap if needed */
     .portfolio-grid {
-        display: block;
-        column-count: 2;
-        column-gap: 10px;
+        gap: 10px;
+    }
+
+    .portfolio-column {
+        gap: 10px;
     }
 
     .portfolio-item {
-        margin-bottom: 4px;
+        margin-bottom: 0;
         width: 100%;
         height: auto;
     }
 
-    .form-wrapper {
+    .form-wrapper,
+    .kakao-section {
         padding: 1.5rem;
     }
 
@@ -745,13 +845,40 @@ footer p {
         line-height: 1.5;
     }
 
-    .filter-tabs {
+    .filter-tabs,
+    .filter-sub-tabs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         width: 100%;
         max-width: 400px;
-        margin: 0 auto 3rem;
+        margin: 0 auto 1rem;
+        border: none;
+        padding: 0;
+    }
+
+    .filter-sub-tabs .filter-btn {
+        border: none;
+        position: relative;
+        padding: 0 25px;
+        margin: 0;
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+    .filter-sub-tabs .filter-btn::after {
+        display: none;
+    }
+
+    .filter-sub-tabs .filter-btn.active {
+        border-bottom: none;
+        color: #ff4800;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .filter-tabs {
+        margin-bottom: 30px;
     }
 
     .filter-btn {
@@ -916,28 +1043,28 @@ footer .container {
 }
 
 
-/* Accent Color: #FF2D00 */
+/* Accent Color: #ff4800 */
 
 .gnb a:hover,
 .gnb .active {
-    color: #FF2D00;
+    color: #ff4800;
     opacity: 1;
 }
 
 .about-btn:hover {
-    background-color: #FF2D00;
-    border-color: #FF2D00;
+    background-color: #ff4800;
+    border-color: #ff4800;
     color: #fff;
 }
 
 .filter-btn.active {
-    font-weight: 700;
-    border-bottom: 2px solid #FF2D00;
-    color: #FF2D00;
+    font-weight: 500;
+    border-bottom: 1.5px solid #ff4800;
+    color: #ff4800;
 }
 
 .submit-btn:hover {
-    background-color: #FF2D00;
+    background-color: #ff4800;
 }
 
 .process-section-block h4 {
@@ -957,7 +1084,8 @@ footer .container {
 .process-sub-block h5 {
     font-size: 16px;
     margin-bottom: 8px;
-    color: #444;
+    color: #ff4800;
+    font-weight: 500;
 }
 
 .process-list li {
@@ -972,12 +1100,12 @@ footer .container {
     content: "•";
     position: absolute;
     left: 0;
-    color: #FF2D00;
+    color: #ff4800;
     /* Accent Bullet */
 }
 
 .footer-menu a:hover {
-    color: #FF2D00;
+    color: #ff4800;
     text-decoration: none;
 }
 
