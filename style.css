@@ -787,6 +787,7 @@ footer p {
         flex-direction: column;
         gap: 2rem;
         margin-bottom: 1rem;
+        /* Reverted to 1rem */
         margin-top: 1rem;
         /* Requirement: slightly wider top margin */
     }
@@ -800,8 +801,8 @@ footer p {
     }
 
     .about-right {
-        height: 180px;
-        /* Reduce height on mobile to minimize whitespace */
+        display: none;
+        /* Hidden on mobile to remove whitespace issues */
     }
 
     .about-desc {
@@ -988,7 +989,8 @@ footer .container {
     }
 
     footer {
-        margin-top: 0px;
+        margin-top: 20px;
+        /* Give it a little breath but not 50px */
     }
 
     .footer-logo img {
