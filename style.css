@@ -797,6 +797,11 @@ footer p {
         margin: 0 auto;
     }
 
+    .about-right {
+        height: 200px;
+        /* Reduce height on mobile to minimize whitespace */
+    }
+
     .about-desc {
         font-size: 15px;
     }
