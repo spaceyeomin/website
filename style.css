@@ -789,10 +789,7 @@ footer p {
         margin-bottom: 3rem;
     }
 
-    .about-part-a .about-left {
-        order: 1;
-        /* Image below text is typical but prompt didn't specify order, sticking to normal flow */
-    }
+
 
     .about-part-a .about-btn {
         display: block;
@@ -864,6 +861,7 @@ footer p {
         margin: 0;
         font-size: 0.9rem;
         color: #666;
+        /* Requirement: Gray for unselected sub-level tabs */
     }
 
     .filter-sub-tabs .filter-btn::after {
@@ -888,6 +886,8 @@ footer p {
         align-items: center;
         height: 100%;
         font-size: 0.9rem;
+        color: #000;
+        /* Requirement: Black for unselected top-level tabs */
     }
 }
 
