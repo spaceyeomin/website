@@ -48,6 +48,24 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 
+    // 4. Hero Slider Logic
+    const heroSlides = document.querySelectorAll('#hero-slider .slide');
+    if (heroSlides.length > 0) {
+        let currentSlide = 0;
+        const slideInterval = 4000; // Change slide every 4 seconds
+
+        setInterval(() => {
+            // Remove active class from current slide
+            heroSlides[currentSlide].classList.remove('active');
+
+            // Calculate next slide index
+            currentSlide = (currentSlide + 1) % heroSlides.length;
+
+            // Add active class to next slide
+            heroSlides[currentSlide].classList.add('active');
+        }, slideInterval);
+    }
+
     // 4. Portfolio Logic (2-depth structure)
     const portfolioGrid = document.getElementById('portfolio-grid');
     const categoryTabsContainer = document.getElementById('category-tabs');
