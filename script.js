@@ -48,23 +48,121 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 
-    // 4. Hero Slider Logic
-    const heroSlides = document.querySelectorAll('#hero-slider .slide');
-    if (heroSlides.length > 0) {
-        let currentSlide = 0;
-        const slideInterval = 4000; // Change slide every 4 seconds
+    // 3.1 Mobile Layout Reordering (About Section)
+    function reorderAboutSection() {
+        const isMobile = window.innerWidth <= 768;
+        const aboutLeft = document.querySelector('.about-left');
+        const aboutRight = document.querySelector('.about-right');
+        const aboutDesc = document.querySelector('.about-desc');
+        const aboutPartA = document.querySelector('.about-part-a');
 
-        setInterval(() => {
-            // Remove active class from current slide
-            heroSlides[currentSlide].classList.remove('active');
+        if (aboutLeft && aboutRight && aboutDesc && aboutPartA) {
+            if (isMobile) {
+                // Mobile: Move .about-right to strictly after .about-desc (inside .about-left)
+                if (aboutDesc.nextElementSibling !== aboutRight) {
+                    // Check if already in position to avoid redundant moves
+                    // Logic: Insert aboutRight AFTER aboutDesc
+                    aboutDesc.after(aboutRight);
 
-            // Calculate next slide index
-            currentSlide = (currentSlide + 1) % heroSlides.length;
+                    // Apply Mobile Specific Styles via JS to ensure they stick
+                    aboutRight.style.width = '100%';
+                    aboutRight.style.height = '300px';
+                    aboutRight.style.marginTop = '20px';
+                    aboutRight.style.marginBottom = '30px';
+                }
+            } else {
+                // Desktop: Move .about-right back to .about-part-a (restore column logic)
+                if (aboutPartA.lastElementChild !== aboutRight) {
+                    aboutPartA.appendChild(aboutRight);
 
-            // Add active class to next slide
-            heroSlides[currentSlide].classList.add('active');
-        }, slideInterval);
+                    // Reset Inline Styles
+                    aboutRight.style.width = '';
+                    aboutRight.style.height = '';
+                    aboutRight.style.marginTop = '';
+                    aboutRight.style.marginBottom = '';
+                }
+            }
+        }
     }
+
+    // Initial check and resize listener
+    reorderAboutSection();
+    window.addEventListener('resize', () => {
+        reorderAboutSection();
+    });
+    // const heroSlides = document.querySelectorAll('#hero-slider .slide');
+    // if (heroSlides.length > 0) {
+    //     let currentSlide = 0;
+    //     const slideInterval = 4000; // Change slide every 4 seconds
+    //
+    //     setInterval(() => {
+    //         // Remove active class from current slide
+    //         heroSlides[currentSlide].classList.remove('active');
+    //
+    //         // Calculate next slide index
+    //         currentSlide = (currentSlide + 1) % heroSlides.length;
+    //
+    //         // Add active class to next slide
+    //         heroSlides[currentSlide].classList.add('active');
+    //     }, slideInterval);
+    // }
+
+    // 5. About Section Slider Logic
+    const aboutSlides = document.querySelectorAll('.about-slider .about-slide');
+    const sliderDotsContainer = document.querySelector('.slider-dots');
+
+    if (aboutSlides.length > 0 && sliderDotsContainer) {
+        let currentAboutSlide = 0;
+        const aboutSlideInterval = 3000; // 3 seconds
+        let aboutIntervalId;
+
+        // Generate Dots
+        aboutSlides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+
+            dot.addEventListener('click', () => {
+                goToAboutSlide(index);
+                resetAboutInterval();
+            });
+
+            sliderDotsContainer.appendChild(dot);
+        });
+
+        const dots = sliderDotsContainer.querySelectorAll('.dot');
+
+        function goToAboutSlide(index) {
+            // Remove active class from current
+            aboutSlides[currentAboutSlide].classList.remove('active');
+            dots[currentAboutSlide].classList.remove('active');
+
+            // Update index
+            currentAboutSlide = index;
+
+            // Add active class to new
+            aboutSlides[currentAboutSlide].classList.add('active');
+            dots[currentAboutSlide].classList.add('active');
+        }
+
+        function nextAboutSlide() {
+            const nextIndex = (currentAboutSlide + 1) % aboutSlides.length;
+            goToAboutSlide(nextIndex);
+        }
+
+        function startAboutInterval() {
+            aboutIntervalId = setInterval(nextAboutSlide, aboutSlideInterval);
+        }
+
+        function resetAboutInterval() {
+            clearInterval(aboutIntervalId);
+            startAboutInterval();
+        }
+
+        // Start Auto Play
+        startAboutInterval();
+    }
+
 
     // 4. Portfolio Logic (2-depth structure)
     const portfolioGrid = document.getElementById('portfolio-grid');
