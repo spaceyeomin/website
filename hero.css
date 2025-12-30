@@ -65,6 +65,14 @@
     border: none;
 }
 
+.hero-video-desktop {
+    display: block;
+}
+
+.hero-video-mobile {
+    display: none;
+}
+
 .overlay-tint {
     position: absolute;
     top: 0;
@@ -136,5 +144,38 @@
 
     #hero-slider {
         height: 400px;
+    }
+
+    .hero-video-desktop {
+        display: none;
+    }
+
+    .hero-video-mobile {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    /* Case 1: Screen is relatively tall (narrower than 9/16) - e.g. tall phones */
+    /* Constrain height to fill screen, width will naturally overflow */
+    @media (max-aspect-ratio: 9/16) {
+        .hero-video-mobile {
+            height: 100vh;
+            width: 56.25vh;
+            /* 100 * 9/16 */
+        }
+    }
+
+    /* Case 2: Screen is relatively wide (wider than 9/16) - e.g. short phones, tablets */
+    /* Constrain width to fill screen, height will naturally overflow */
+    @media (min-aspect-ratio: 9/16) {
+        .hero-video-mobile {
+            width: 100vw;
+            height: 177.78vw;
+            /* 100 * 16/9 */
+        }
     }
 }
