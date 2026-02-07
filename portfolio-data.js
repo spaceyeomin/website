@@ -9,7 +9,8 @@ const portfolioCategories = [
         name: "숙박 공간",
         subcategories: [
             { id: "gangneung_arumdeuri", name: "강릉 아름드리" },
-            { id: "suwon_yeominjae", name: "수원 여민재" }
+            { id: "suwon_yeominjae", name: "수원 여민재" },
+            { id: "wangsimni_airbnb", name: "왕십리 에어비앤비" }
         ]
     },
     {
@@ -62,6 +63,21 @@ const portfolioData = [
     { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "29.jpg" },
     { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "30.jpg" },
     { projectId: "suwon_yeominjae", title: "수원 여민재", filename: "31.png" },
+
+    // 왕십리 에어비앤비
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "1.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "2.JPG" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "3.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "4.JPG" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "5.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "6.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "7.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "8.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "9.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "10.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "11.jpg" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "12.JPG" },
+    { projectId: "wangsimni_airbnb", title: "왕십리 에어비앤비", filename: "13.jpg" },
 
     // 용산 단기임대
     { projectId: "yongsan_rental", title: "용산 단기임대", filename: "1.jpg" },
