@@ -17,7 +17,8 @@ const portfolioCategories = [
         id: "rental",
         name: "임대 공간",
         subcategories: [
-            { id: "yongsan_rental", name: "용산 단기임대" }
+            { id: "yongsan_rental", name: "용산 단기임대" },
+            { id: "seogyodong_rental", name: "서교동 단기임대" }
         ]
     },
     {
@@ -89,6 +90,22 @@ const portfolioData = [
     { projectId: "yongsan_rental", title: "용산 단기임대", filename: "7.jpg" },
     { projectId: "yongsan_rental", title: "용산 단기임대", filename: "8.jpg" },
     { projectId: "yongsan_rental", title: "용산 단기임대", filename: "9.jpg" },
+
+    // 서교동 단기임대
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "1.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "2.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "3.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "4.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "5.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "6.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "7.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "8.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "9.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "10.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "11.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "12.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "13.jpg" },
+    { projectId: "seogyodong_rental", title: "서교동 단기임대", filename: "14.jpg" },
 
     // 강릉 아름드리
     { projectId: "gangneung_arumdeuri", title: "강릉 아름드리", filename: "1.jpeg" },
