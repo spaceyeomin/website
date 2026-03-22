@@ -10,7 +10,8 @@ const portfolioCategories = [
         subcategories: [
             { id: "gangneung_arumdeuri", name: "강릉 아름드리" },
             { id: "suwon_yeominjae", name: "수원 여민재" },
-            { id: "wangsimni_airbnb", name: "왕십리 에어비앤비" }
+            { id: "wangsimni_airbnb", name: "왕십리 에어비앤비" },
+            { id: "yeoksam_airbnb", name: "역삼 에어비앤비" }
         ]
     },
     {
@@ -159,5 +160,23 @@ const portfolioData = [
     { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "12.jpg" },
     { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "13.jpg" },
     { projectId: "nowon_apt", title: "노원 59㎡ APT", filename: "14.jpg" },
+
+    // 역삼 에어비앤비
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "1.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "2.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "3.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "4.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "5.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "6.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "7.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "8.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "9.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "10.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "11.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "12.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "13.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "14.jpg" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "16.JPG" },
+    { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "17.jpg" },
 
 ];
