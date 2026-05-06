@@ -28,7 +28,7 @@ const portfolioCategories = [
         subcategories: [
             { id: "anyang_apt", name: "안양 59㎡ APT" },
             { id: "nowon_apt", name: "노원 59㎡ APT" },
-            { id: "bangbae_apt", name: "뱅배 125㎡ APT" }
+            { id: "bangbae_apt", name: "방배 125㎡ APT" }
         ]
     }
 ];
@@ -180,22 +180,22 @@ const portfolioData = [
     { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "16.JPG" },
     { projectId: "yeoksam_airbnb", title: "역삼 에어비앤비", filename: "17.jpg" },
 
-    // 뱅배 125㎡ APT
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "1.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "2.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "3.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "4.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "5.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "6.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "7.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "8.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "9.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "10.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "11.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "12.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "13.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "14.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "15.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "16.jpg" },
-    { projectId: "bangbae_apt", title: "뱅배 125㎡ APT", filename: "17.jpg" },
+    // 방배 125㎡ APT
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "1.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "2.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "3.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "4.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "5.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "6.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "7.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "8.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "9.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "10.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "11.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "12.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "13.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "14.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "15.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "16.jpg" },
+    { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "17.jpg" },
 ];
