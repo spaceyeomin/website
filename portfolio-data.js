@@ -11,7 +11,8 @@ const portfolioCategories = [
             { id: "gangneung_arumdeuri", name: "강릉 아름드리" },
             { id: "suwon_yeominjae", name: "수원 여민재" },
             { id: "wangsimni_airbnb", name: "왕십리 에어비앤비" },
-            { id: "yeoksam_airbnb", name: "역삼 에어비앤비" }
+            { id: "yeoksam_airbnb", name: "역삼 에어비앤비" },
+            { id: "seokchondong_airbnb", name: "석촌 에어비앤비" }
         ]
     },
     {
@@ -198,4 +199,22 @@ const portfolioData = [
     { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "15.jpg" },
     { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "16.jpg" },
     { projectId: "bangbae_apt", title: "방배 125㎡ APT", filename: "17.jpg" },
+
+    // 석촌 에어비앤비
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "1.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "2.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "3.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "4.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "5.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "6.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "7.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "8.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "9.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "10.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "11.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "12.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "13.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "14.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "15.jpg" },
+    { projectId: "seokchondong_airbnb", title: "석촌 에어비앤비", filename: "16.jpg" },
 ];
