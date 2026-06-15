@@ -413,7 +413,7 @@ section {
 .filter-sub-tabs .filter-btn {
     border: none;
     position: relative;
-    padding: 0 25px;
+    padding: 7px 25px;
     margin: 0;
     font-size: 1rem;
     color: #666;
@@ -448,7 +448,7 @@ section {
 .filter-btn {
     background: none;
     border: 1px solid transparent;
-    padding: 0.5rem 1.5rem;
+    padding: 7px 25px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
     font-size: 1rem;
@@ -892,7 +892,7 @@ footer p {
     .filter-sub-tabs .filter-btn {
         border: none;
         position: relative;
-        padding: 0 25px;
+        padding: 7px 25px;
         margin: 0;
         font-size: 0.9rem;
         color: #666;
@@ -920,6 +920,7 @@ footer p {
         justify-content: center;
         align-items: center;
         height: 100%;
+        padding: 7px 25px;
         font-size: 0.9rem;
         color: #000;
         /* Requirement: Black for unselected top-level tabs */
